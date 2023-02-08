@@ -1,0 +1,12 @@
+import 'package:medicinadireta/modules/new_medical_appointment/domain/entities/network/request_medical_appointment_notification.dart';
+import 'package:medicinadireta/modules/new_medical_appointment/domain/entities/network/request_medical_appointment_schedule.dart';
+import 'package:medicinadireta/modules/new_medical_appointment/domain/entities/network/request_medical_appointment_schedule_snap.dart';
+import 'package:medicinadireta/modules/new_medical_appointment/infra/models/network/response_new_medical_appointment_notification_ext.dart';
+import 'package:medicinadireta/modules/new_medical_appointment/infra/models/network/response_new_medical_appointment_schedule_ext.dart';
+
+abstract class NewMedicalAppointmentDatasource {
+  Future<ResponseNewMedicalAppointmentNotificationExt> sendSMSAppointmentDatasource(RequestNewMedicalAppointmentNotification parameters);
+  Future<ResponseNewMedicalAppointmentNotificationExt> sendMailAppointmentDatasource(RequestNewMedicalAppointmentNotification parameters);
+  Future<ResponseNewMedicalAppointmentScheduleExt> saveNewMedicalAppointmentDatasource(RequestNewMedicalAppointmentSchedule parameters, int scheduleId);
+  Future<ResponseNewMedicalAppointmentScheduleExt> saveScheduleSnapDatasource(RequestMedicalAppointmentScheduleSnap parameters);
+}

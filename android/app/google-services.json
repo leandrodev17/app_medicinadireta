@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1067926340532",
+    "project_id": "medicina-direta-da3fd",
+    "storage_bucket": "medicina-direta-da3fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067926340532:android:0278df2af5f961dcfc68e1",
+        "android_client_info": {
+          "package_name": "br.com.megaleios.medicinadireta"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067926340532-3prnqgqi011mki600ro0jgjp6n21grfq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgyfoQaCpJkSMCFl5ndR7O9zWPnbjFeuk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067926340532-3prnqgqi011mki600ro0jgjp6n21grfq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1067926340532-sr041tj02uqmch2v7u38vi9mp8vkm4so.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "br.com.brmobile.Medicina",
+                "app_store_id": "952872723"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

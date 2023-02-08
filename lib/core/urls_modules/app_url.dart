@@ -1,0 +1,84 @@
+import 'package:medicinadireta/constants/const_endpoint.dart';
+
+class AppUrl {
+  AppUrl._();
+  static String _baseUrl = ENDPOINT;
+
+  static String pacienteTelefone(int patientId) => '$patientPhone/PacienteId(pacienteId=$patientId)';
+  static String patientEvolutionGet(int patientId) => '$patientEvolution/Paciente(pacienteId=$patientId)';
+  static String patientEvolutionPOST(int patientId) => '$patientEvolution($patientId)';
+  static String patientEvolutionPUT(int evolutionId) => '$patientEvolution($evolutionId)';
+  static String findPatient(int patientId) => '$patient($patientId)';
+  static String getPayments(int patientId) => '$payments/Paciente(pacienteId=$patientId)';
+
+  static String getListAttachments(int patientId) => '$attachments($patientId)';
+  static String getFindAttachments(int attachmentId) => '$attachmentDetail(idAnexo=$attachmentId)';
+  static String saveAttachments(int pacienteId) => '$attachments($pacienteId)';
+
+  static String getMedicineInUse(int patientId) => '$medicineInUse($patientId)';
+  static String putSaveRelationship(int patientId) => '$patient($patientId)';
+  static String putSaveSchedule(int scheduleId) => '$schedule($scheduleId)';
+  static String postSaveSchedule() => schedule;
+  static String findPatientId(int patientId) => '$patientObjeto($patientId)';
+  static String savePatientPhone(int patientId) => '$patientPhone($patientId)';
+  static String reschudeleApi(int novoAgendamentoId) => '$schedule2($novoAgendamentoId)/Remarcar';
+  static String rescheduleSnapApi(int novoAgendamentoId) => '$schedule2($novoAgendamentoId)/RemarcarEncaixe';
+  static String searchContentsIDInfoMed(String id) => '$contentsInfoMed/$id';
+  static String savePacienteAnamnese(int id) => '$pacienteAnamnese($id)';
+  static String getPacienteAnamnese(int pacienteId) => '$pacienteAnamnese/Paciente(pacienteId=$pacienteId)';
+  static String getPacienteAlergia(int pacienteId) => '$pacienteAlergia/Paciente(pacienteId=$pacienteId)';
+  static String postPacienteAlergia(int pacienteId) => '$pacienteAlergia/$pacienteId';
+  static String putPacienteAlergia(int allergyId) => '$pacienteAlergia/$allergyId';
+  static String refactoryListPatient({int id = 0, String nome = "''", String cpf = "''", int limit = 20, int offset = 0}) =>
+      '$patientObjeto/Filters(id=$id,nome=$nome,cpf=$cpf,limit=$limit,offset=$offset)';
+  static String embeddedMemed({int patientId = 0, int userId = 0}) => 'https://pep.medicinadireta.com.br/memed_aplicativo/memed_aplicativo.php?var_paciente=$patientId&varusucod=$userId';
+  static String get attachmentDetail => '$_baseUrl/pacienteEvolucaoAnexo/BuscarAnexo';
+  static String get attachments => '$_baseUrl/pacienteEvolucaoAnexo';
+  static String get auth => '$_baseUrl/Seguranca';
+  static String get cid => '$_baseUrl/Cid';
+  static String get communication => '$_baseUrl/Mensagem';
+  static String get communicationSms => '$_baseUrl/Mensagem/InserirSmsIndividual';
+  static String get contacts => '$_baseUrl/Contato';
+  static String get emailModels => '$_baseUrl/mensagem/ModeloEmail';
+  static String get evolutionModel => '$_baseUrl/pacienteEvolucaoModelo';
+  static String get medicineInUse => '$_baseUrl/pacienteEvolucaoMedicamento';
+  static String get messageScheduleEmail => '$_baseUrl/mensagem/InserirCorreioAgendamento';
+  static String get messageScheduleSms => '$_baseUrl/mensagem/InserirSmsAgendamento';
+  static String get patient => '$_baseUrl/paciente';
+  static String get patientObjeto => '$_baseUrl/Paciente';
+  static String get patientProducts => '$_baseUrl/pacienteProdutos';
+  static String get patientPhone => '$_baseUrl/pacienteTelefone';
+  static String get patientEvolution => '$_baseUrl/PacienteEvolucao';
+  static String get payments => '$_baseUrl/faturamento';
+  static String get schedule => '$_baseUrl/agenda';
+  static String get scheduleConfig => '$_baseUrl/agendaConfig';
+  static String get smsModels => '$_baseUrl/mensagem/ModeloSms';
+  static String get user => '$_baseUrl/usuario';
+  static String get schedule2 => '$_baseUrl/Agenda';
+  // static String get reschedule => '/Remarcar';
+  // static String get rescheduleSnap => '/RemarcarEncaixe';
+  static String get versionCode => '$_baseUrl/App';
+  static String get authInfoMed => '/auth';
+  static String get contentsInfoMed => '/contents';
+  static String get pacienteAnamnese => '$_baseUrl/PacienteAnamnese';
+  static String get ciap => '$_baseUrl/Ciap';
+  static String get cidSubCategoria => '$_baseUrl/CidSubCategoria';
+  static String get pacienteAlergia => '$_baseUrl/PacienteAlergia';
+  static String get findAllMedicalTerapeutica => '$_baseUrl/Medicamento/ClasseTerapeutica?api-version=2.0';
+  static String get medical => '$_baseUrl/Medicamento?api-version=2.0';
+  static String get registerMedical => medical;
+  static String updateMedical(int medicalId) => '$_baseUrl/Medicamento/$medicalId?api-version=2.0';
+  static String findMedicalId(int medicalId) => '$_baseUrl/Medicamento/$medicalId?api-version=2.0';
+  static String deletePrincipiosAtivos(int medicalId) => '$_baseUrl/Medicamento/$medicalId/PrincipiosAtivos?api-version=2.0';
+  static String get findAllMedicalPrincipalActive => '$_baseUrl/Medicamento/PrincipioAtivo?api-version=2.0';
+  static String findOneMedical(int medicalId) => '$_baseUrl/Medicamento?api-version=2.0/$medicalId';
+  static String registerMedicalPrincipalActive(int medicalId) => '$_baseUrl/Medicamento/$medicalId/PrincipioAtivo?api-version=2.0';
+  static String get findAllMedicalFarmaceutica => '$_baseUrl/Medicamento/FormaFarmaceutica?api-version=2.0';
+  static String get findAllPacienteAviso => '$_baseUrl/PacienteAviso';
+  static String get findAllPrescription => 'https://api02.medicinadireta.com.br/soap/Receita';
+  static String findAllPrescriptionPatientId(int patientId) => 'https://api02.medicinadireta.com.br/soap/Receita/paciente/$patientId';
+  static String findAllExamsPatientId(int patientId) => 'https://api02.medicinadireta.com.br/soap/receita/exame/solicitacao/paciente/$patientId';
+  static String findAllFormPlanPatientId(int patientId) => 'https://api02.medicinadireta.com.br/soap/receita/formulario/paciente/$patientId';
+  static String findAllAnthropometryPatientId(int patientId) => 'https://api02.medicinadireta.com.br/soap/Antropometria/paciente/$patientId';
+  static String findAllPressurePatientId(int patientId) => 'https://api02.medicinadireta.com.br/soap/Pressao/paciente/$patientId';
+}

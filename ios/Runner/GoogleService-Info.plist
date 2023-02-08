@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1067926340532-sr041tj02uqmch2v7u38vi9mp8vkm4so.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1067926340532-sr041tj02uqmch2v7u38vi9mp8vkm4so</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCV4WU2QP3RvZKiCn8t_A9up-Ef_9H5dUc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1067926340532</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>br.com.brmobile.Medicina</string>
+	<key>PROJECT_ID</key>
+	<string>medicina-direta-da3fd</string>
+	<key>STORAGE_BUCKET</key>
+	<string>medicina-direta-da3fd.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1067926340532:ios:69689f4ba4e45436fc68e1</string>
+</dict>
+</plist>

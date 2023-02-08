@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="push_notification_medicina_channel_id" translatable="false">fcm_default_channel_id</string>
+    <string name="push_notification_medicina_channel_name" translatable="false">fcm_default_channel_name</string>
+    <string name="push_notification_medicina_channel_description" translatable="false">fcm_default_channel_description</string>
+</resources>
