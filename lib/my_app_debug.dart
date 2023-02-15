@@ -51,7 +51,7 @@ class MyAppDebug extends StatelessWidget {
                 },
               ),
               Positioned(
-                right: 100,
+                right: 150,
                 top: 40,
                 child: Align(
                   alignment: Alignment.center,

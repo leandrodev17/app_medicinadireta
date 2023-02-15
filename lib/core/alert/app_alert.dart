@@ -13,6 +13,7 @@ class AppAlert {
     Get.snackbar(
       '',
       '',
+      // ignore: unnecessary_string_interpolations
       titleText: Text('$title', style: GoogleFonts.openSans(fontSize: 22, fontWeight: FontWeight.w600, color: Colors.white)),
       messageText: Text('$body', style: GoogleFonts.openSans(fontSize: 18, fontWeight: FontWeight.w500, color: Colors.white)),
       snackPosition: snackPosition,

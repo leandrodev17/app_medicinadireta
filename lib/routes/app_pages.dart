@@ -62,6 +62,7 @@ import 'package:medicinadireta/modules/patient_information/submodules/relationsh
 import 'package:medicinadireta/modules/reschedule_committed/bindings/reschudule_committed.dart';
 import 'package:medicinadireta/modules/reschedule_committed/presenter/pages/reschedule/view_reschedule.dart';
 import 'package:medicinadireta/modules/reschedule_committed/presenter/pages/reschedule_snap/view_reschedule_snap.dart';
+import 'package:medicinadireta/modules/revenues/bindings/revenues_bindings.dart';
 import 'package:medicinadireta/modules/splash/bindings/splash_bindings.dart';
 import 'package:medicinadireta/modules/splash/presenter/splash_screen.dart';
 import 'package:medicinadireta/modules/support/bindings/support_bindings.dart';
@@ -69,6 +70,7 @@ import 'package:medicinadireta/modules/support/presenter/pages/support_phone.dar
 
 import '../modules/patient_information/submodules/pressure/bindings/pressure_bindings.dart';
 import '../modules/patient_information/submodules/pressure/presenter/pressure_screen.dart';
+import '../modules/revenues/revenues_screen.dart';
 import '/core/page_not_access/presenter/page_not_access_screen.dart';
 import '/modules/authentication/bingings/authetication_bindings.dart';
 import '/modules/authentication/presenter/authetication_screen.dart';
@@ -191,6 +193,9 @@ class AppPages {
 
     ///Cadastro de medicamentos
     GetPage(name: Routes.drugRegistration, page: () => const MedicalRegisterScreen(), binding: ModelToMailBindings(), transition: Transition.fadeIn),
+
+    ///Receitas
+    GetPage(name: Routes.revenues, page: () => const RevenuesScreen(), binding: RevenuesBindings(), transition: Transition.fadeIn),
 
     ///SOAP=>Plano=>Receita
     GetPage(name: Routes.prescription, page: () => const PrescriptionScreen(), binding: PrescriptionBindings(), transition: Transition.fadeIn),

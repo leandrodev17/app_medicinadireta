@@ -1,3 +1,4 @@
+
 import 'package:medicinadireta/constants/const_strings.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -112,7 +113,7 @@ class Themes {
       /// Está usando na versao do APP bodyText1
       bodyText1: _subtitulo,
     ),
-    buttonTheme: ButtonThemeData(buttonColor: ConstColors.fillColor, height: 50, minWidth: 250, textTheme: ButtonTextTheme.primary),
+    buttonTheme: const ButtonThemeData(buttonColor: ConstColors.fillColor, height: 50, minWidth: 250, textTheme: ButtonTextTheme.primary),
     inputDecorationTheme: Themes.inputDecorationTheme(),
   );
 
@@ -146,8 +147,8 @@ class Themes {
       toolbarHeight: 70.0,
       backgroundColor: Colors.white,
       systemOverlayStyle: SystemUiOverlayStyle.light,
-      actionsIconTheme: IconThemeData(color: ConstColors.blue),
-      iconTheme: IconThemeData(color: ConstColors.blue),
+      actionsIconTheme: const IconThemeData(color: ConstColors.blue),
+      iconTheme: const IconThemeData(color: ConstColors.blue),
       elevation: 2.0,
       centerTitle: true,
       titleTextStyle: _titulo.copyWith(color: ConstColors.orange),
@@ -171,7 +172,7 @@ class Themes {
       /// Está usando na versao do APP bodyText1
       bodyText1: _subtitulo,
     ),
-    buttonTheme: ButtonThemeData(buttonColor: ConstColors.fillColor, height: 50, minWidth: 250, textTheme: ButtonTextTheme.primary),
+    buttonTheme: const ButtonThemeData(buttonColor: ConstColors.fillColor, height: 50, minWidth: 250, textTheme: ButtonTextTheme.primary),
     inputDecorationTheme: Themes.inputDecorationTheme(),
   );
 }

@@ -43,6 +43,7 @@ abstract class Routes {
 
   static const clinicalArea = '/clinical_area';
   static const drugRegistration = '/drug_registration';
+  static const revenues = '/revenues';
   static const prescription = '/prescription';
   static const exams = '/exams';
   static const formPlan = '/formPlan';

@@ -65,11 +65,17 @@ class _PageSessionMenuState extends State<PageSessionMenu> {
         titlePrimary: 'Área Clínica'.tr.toUpperCase(),
         trailingColorPrimary: ConstColors.orange,
         itens: [
+          // ItemSubmenuModel(
+          //   visible: widget.accessMenuUser.existsKeyMenu(Routes.drugRegistration),
+          //   title: 'Cadastro de Medicamento'.toUpperCase(), 
+          //   onTap: () async => await Get.toNamed(Routes.drugRegistration),
+          // ),
           ItemSubmenuModel(
-            visible: widget.accessMenuUser.existsKeyMenu(Routes.drugRegistration),
-            title: 'Cadastro de Medicamento'.toUpperCase(),
-            onTap: () async => await Get.toNamed(Routes.drugRegistration),
+            visible: true,
+            title:  'receitas'.toUpperCase(),
+            onTap: () async => await Get.toNamed(Routes.revenues),
           ),
+
         ],
       ),
       const SizedBox(height: 5),

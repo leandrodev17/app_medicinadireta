@@ -37,6 +37,7 @@ class PatientModel extends Equatable {
   final AddressModel? endereco;
   final List<PatientModelPhone>? telefones;
 
+
   PatientModel({
     this.odataContext,
     this.id,

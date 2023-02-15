@@ -75,17 +75,22 @@ class _MenuPhoneState extends State<MenuPhone> with WidgetsBindingObserver {
                               alignment: Alignment.center,
                               color: ConstColors.orange,
                               child: Obx(() {
-                                return Text(
-                                  _access.infoLogin.value.toUpperCase(),
-                                  style: Theme.of(context).textTheme.bodyText1?.copyWith(color: Colors.white, fontSize: 11.sp, fontWeight: FontWeight.w700),
+                                return Container(
+                                  child: Text(
+                                    _access.infoLogin.value.toUpperCase(),
+                                    style: Theme.of(context).textTheme.bodyText1?.copyWith(color: Colors.white, fontSize: 11.sp, fontWeight: FontWeight.w700),
+                                  ),
                                 );
                               }),
                             ),
                           ),
                           Obx(() {
-                            return Text(
-                              _access.name.value.toUpperCase(),
-                              style: Theme.of(context).textTheme.bodyText1?.copyWith(color: ConstColors.blue, fontSize: 14.sp, fontWeight: FontWeight.w700),
+                            return SizedBox(
+                              width: 200.w,
+                              child: Text(
+                                _access.name.value.toUpperCase(),
+                                style: Theme.of(context).textTheme.bodyText1?.copyWith(color: ConstColors.blue, fontSize: 14.sp, fontWeight: FontWeight.w700),
+                              ),
                             );
                           }),
                         ],

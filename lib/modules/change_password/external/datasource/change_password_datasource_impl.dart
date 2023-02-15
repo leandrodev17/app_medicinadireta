@@ -1,4 +1,3 @@
-import 'dart:convert';
 
 import 'package:medicinadireta/core/network/network.dart';
 import 'package:medicinadireta/core/urls_modules/app_url.dart';
